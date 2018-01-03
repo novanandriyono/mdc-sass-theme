@@ -1,1 +1,2 @@
-# ignore folder
+# ignore all files in the build/ directory
+.git/
