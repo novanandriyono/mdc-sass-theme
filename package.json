@@ -9,6 +9,7 @@
     "public": "npm run dev && node scripts/public.js",
     "new": "node scripts/new.js"
   },
+  "main": "index.js",
   "keywords": [
     "mdc"
   ],
