@@ -1,6 +1,6 @@
 var fs = require('fs');
 var arg = process.argv[2];
-var letter = /^[a-zA-Z]+$/;
+var letter = /^[0-9a-zA-Z]+$/;
 var themeDir = fs.readdirSync('./themes');
 var mdcsasstheme = fs.readdirSync('./node_modules/mdc-sass/dist/theme/default');
 
