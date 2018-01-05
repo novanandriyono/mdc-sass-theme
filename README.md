@@ -10,19 +10,43 @@ Learn theming MDC and test it. Form mdc-sass source @material (warning: experime
 npm install mdc-sass-theme
 ```
 
-### Creating New Theme
+### Creating new sass theme
 
 ```
-npm run new <themename>
+var mdcsasstheme = require('mdc-sass-theme');
+var pathsass = __dirname + '/<your sass folder>';
+var pathcss = __dirname + '/<your css folder>';
+var options = {
+	'name': themename,
+	'sassPath': pathsass,
+	'cssPath': pathcss,
+	'for': 'sass' <==== creating XD
+}
+console.log(mdcsasstheme(options));
+
 ```
 
-## Compile all theme
+
+###  Compile sass to css from node
 
 ```
-npm run public
+var mdcsasstheme = require('mdc-sass-theme');
+var pathsass = __dirname + '/<your sass folder>';
+var pathcss = __dirname + '/<your css folder>';
+var options = {
+	'name': themename,
+	'sassPath': pathsass,
+	'cssPath': pathcss,
+	'for': 'css' <==== compile XD
+}
+console.log(mdcsasstheme(options));
+
 ```
 
-all theme compile on ./dist/css and ./public/css
+
+========================================================================================================
+
+### Creating New Theme (builtin test serve with CLI)
 
 ## test on localhost
 
@@ -31,6 +55,19 @@ npm run serve
 ```
 
 please take a look -> public folder to edit
+
+```
+npm run new <themename>
+```
+
+
+## Compile all theme (built in test serve with CLI)
+
+```
+npm run public
+```
+
+all theme compile on ./dist/css and ./public/css
 
 ## Built With
 
