@@ -52,7 +52,8 @@ module.exports = function(options){
 			  									if (err){
 			  										console.log(err);
 			  									}else{
-			  										fs.chmod(outputpath,0644,(err)=>{
+			  										var outputpathMode = parseInt('0644',8);
+			  										fs.chmod(outputpath,outputpathMode,(err)=>{
 			  											if(err){
 			  												console.log(err);
 			  											}else{
@@ -62,7 +63,8 @@ module.exports = function(options){
 			  									};
 			  								});
 			  							}
-			  							fs.chmod(newfile,0644,(err)=>{
+			  							var newfileMode = parseInt('644',8);
+			  							fs.chmod(newfile,newfileMode,(err)=>{
 			  								if(err){
 			  									console.log(err);
 			  								}else{
@@ -71,7 +73,8 @@ module.exports = function(options){
 			  							});
 			  						}
 			  					});
-			  					fs.chmod(themefolder,0755,(err)=>{
+			  					var themefolderMode = parseInt('0755',8);
+			  					fs.chmod(themefolder,themefolderMode,(err)=>{
 					  				if(err){
 					  					console.log(err);
 					  				}else{
@@ -111,7 +114,8 @@ module.exports = function(options){
 							var minifiedCss = csso.minify(css).css;
 							fs.writeFile(min, minifiedCss, function (err) {
 								if (!err) {
-									fs.chmod(min,0644,(err)=>{
+									var minMode = parseInt('0644',8);
+									fs.chmod(min,minMode,(err)=>{
 										if(err){
 										console.log(err);
 										}
@@ -122,7 +126,8 @@ module.exports = function(options){
 								}
 							});
 						}
-						fs.chmod(pathCss,0644,(err)=>{
+						var pathCssMode = parseInt('0644',8);
+						fs.chmod(pathCss,pathCssMode,(err)=>{
 							if(err){
 								console.log(err);
 							}
