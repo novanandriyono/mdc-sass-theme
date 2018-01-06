@@ -1,13 +1,9 @@
 {
   "name": "mdc-sass-theme",
   "version": "1.0.6",
-  "description": "Learn theming MDC and test it. Form mdc-sass source @material (warning: experimental!!)",
+  "description": "Learn theme MDC. Form mdc-sass source @material (warning: experimental!!)",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "node scripts/connect-serve-static.js",
-    "dev": "node scripts/node-sass.js",
-    "public": "npm run dev && node scripts/public.js",
-    "new": "node scripts/new.js"
   },
   "repository": {
     "type": "git",
@@ -20,10 +16,8 @@
   "author": "Novan Andriyono <evelynradtya@gmail.com>",
   "license": "UNLICENSED",
   "dependencies": {
-    "connect": "^3.6.5",
     "csso": "^3.4.0",
     "mdc-sass": "^1.0.1",
-    "node-sass": "^4.7.2",
-    "serve-static": "^1.13.1"
+    "node-sass": "^4.7.2"
   }
 }
