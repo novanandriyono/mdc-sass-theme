@@ -9,6 +9,10 @@
     "public": "npm run dev && node scripts/public.js",
     "new": "node scripts/new.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/novanandriyono/mdc-sass-theme"
+  },
   "main": "index.js",
   "keywords": [
     "mdc"
