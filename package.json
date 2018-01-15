@@ -16,8 +16,8 @@
   "author": "Novan Andriyono <evelynradtya@gmail.com>",
   "license": "UNLICENSED",
   "dependencies": {
-    "csso": "^3.4.0",
-    "mdc-sass": "^1.0.1",
+    "csso": "^3.5.0",
+    "mdc-sass": "^1.0.5",
     "node-sass": "^4.7.2"
   }
 }
