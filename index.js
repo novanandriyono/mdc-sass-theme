@@ -63,7 +63,7 @@ module.exports = function(options){
 			  									};
 			  								});
 			  							}
-			  							var newfileMode = parseInt('644',8);
+			  							var newfileMode = parseInt('0644',8);
 			  							fs.chmod(newfile,newfileMode,(err)=>{
 			  								if(err){
 			  									console.log(err);
