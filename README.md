@@ -1,6 +1,6 @@
 # mdc-sass-theme
 
-Learn theming MDC. Form mdc-sass source @material (warning: experimental!!)
+Learn theming MDC. source @material (warning: experimental!!)
 
 ## Getting Started
 
@@ -10,37 +10,38 @@ Learn theming MDC. Form mdc-sass source @material (warning: experimental!!)
 npm install mdc-sass-theme
 ```
 
-### Creating new sass theme
+
+### Creating new theme
+
+```
+npm run create themename sasspath
+```
+
+
+###  Compile sass to css from node CLI
+
+```
+npm run compile themename sasspath csspath
+```
+
+
+###  Compile sass to css with require
 
 ```
 var mdcsasstheme = require('mdc-sass-theme');
-var pathsass = __dirname + '/<your sass folder>';
-var pathcss = __dirname + '/<your css folder>';
 var options = {
-	'name': themename,
-	'sassPath': pathsass,
-	'cssPath': pathcss,
-	'for': 'sass' <==== creating XD
-}
-console.log(mdcsasstheme(options));
-
+	'name': 'mdc',
+	'sassPath': yoursassfolder,
+	'cssPath': yourcssfolder
+};
+console.log(mdcsasstheme(options).compile());
 ```
 
 
-###  Compile sass to css from node
+###  Copy Components @material from CLI
 
 ```
-var mdcsasstheme = require('mdc-sass-theme');
-var pathsass = __dirname + '/<your sass folder>';
-var pathcss = __dirname + '/<your css folder>';
-var options = {
-	'name': themename,
-	'sassPath': pathsass,
-	'cssPath': pathcss,
-	'for': 'css' <==== compile XD
-}
-console.log(mdcsasstheme(options));
-
+npm run components themename componensName sasspath
 ```
 
 
@@ -48,6 +49,6 @@ console.log(mdcsasstheme(options));
 
 * [node-sass](https://www.npmjs.com/package/node-sass)
 * [csso](https://www.npmjs.com/package/csso)
-* [mdc-sass](https://www.npmjs.com/package/mdc-sass)
+* [material-components-web](https://www.npmjs.com/package/material-components-web)
 
 ## not goal T_T
