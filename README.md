@@ -28,7 +28,7 @@ npm run compile themename sasspath csspath
 ###  Compile sass to css with require
 
 ```
-var mdcsasstheme = require('./index.js');
+var mdcsasstheme = require('mdc-sass-theme');
 var options = {
 	'name': 'mdc',
 	'sassPath': yoursassfolder,
