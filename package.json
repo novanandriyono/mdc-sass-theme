@@ -1,6 +1,6 @@
 {
   "name": "mdc-sass-theme",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Learn theme MDC. Form mdc-sass source @material (warning: experimental!!)",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
