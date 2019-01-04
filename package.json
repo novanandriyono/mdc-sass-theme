@@ -20,8 +20,8 @@
   "license": "UNLICENSED",
   "dependencies": {
     "csso": "^3.5.0",
-    "mdc-sass": "^1.2.10",
-    "node-sass": "^4.9.2",
+    "mdc-sass": "^1.2.14",
+    "node-sass": "^4.11.0",
     "pyfiles-copy": "^1.0.4"
   }
 }
